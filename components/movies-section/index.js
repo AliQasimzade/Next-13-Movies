@@ -8,7 +8,7 @@ async function delay(ms) {
   return new Promise(res => setTimeout(res, ms))
 }
 async function MoviesSection({ title, movies }) {
-  await delay(3000)
+  await delay(2000)
 
   return (
     <div className={styles.moviesSection}>
