@@ -10,7 +10,7 @@ async function delay(ms) {
 }
  async function MoviePage({ params, searchParams }) {
   
-  await delay(2000)
+  await delay(3000)
   const movieDetail = Movies.results.find(movie => `${movie.id}` === params.id)
  
   if (movieDetail.success === false) {
