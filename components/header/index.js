@@ -12,9 +12,9 @@ function Header() {
           <FaPlayCircle /> NETFILMS
         </Link>
         <nav className={styles.navigationMenu}>
-          <Link href="#">MOVIES</Link>
-          <Link href="#">SERIES</Link>
-          <Link href="#">KIDS</Link>
+          <Link href="#" className={styles.link}>MOVIES</Link>
+          <Link href="#" className={styles.link}>SERIES</Link>
+          <Link href="#" className={styles.link}>KIDS</Link>
         </nav>
       </div>
     </header>

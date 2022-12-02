@@ -4,7 +4,12 @@ import Image from "next/image";
 
 import styles from "./styles.module.css";
 
-function MoviesSection({ title, movies }) {
+async function delay(ms) {
+  return new Promise(res => setTimeout(res, ms))
+}
+async function MoviesSection({ title, movies }) {
+  await delay(1000)
+
   return (
     <div className={styles.moviesSection}>
       <h3 className={styles.title}>{title}</h3>
