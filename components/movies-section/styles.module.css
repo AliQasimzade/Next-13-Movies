@@ -20,17 +20,39 @@
   overflow: hidden;
   border-radius: 8px;
   position: relative;
+  overflow: hidden;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
 }
-
-.movie:hover {
+.movieInfo {
+  position: absolute;
+  top: 100%;
   z-index: 9;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  transition: top 350ms ease-in-out;
+  
+}
+.movieInfo div p {
+  margin: 5px 0;
+}
+.movie:hover .movieInfo {
+  top: 45%;
+}
+
+.movie:hover a{
+ 
   transform: scale(1.25);
 }
 
 @media screen and (max-width: 402px) {
-  .movie:hover {
+  .movie:hover a{
     transform: scale(1.03);
   }
 }
@@ -40,7 +62,7 @@
     width: 100%;
     
   }
-  .movie:hover {
+  .movie:hover a{
     transform: scale(1.1);
   }
 }
