@@ -28,3 +28,19 @@
   z-index: 9;
   transform: scale(1.25);
 }
+
+@media screen and (max-width: 402px) {
+  .movie:hover {
+    transform: scale(1.03);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movie {
+    width: 100%;
+    
+  }
+  .movie:hover {
+    transform: scale(1.1);
+  }
+}

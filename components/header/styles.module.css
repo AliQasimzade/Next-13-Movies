@@ -30,3 +30,15 @@
   font-weight: 700;
   letter-spacing: 2px;
 }
+
+@media screen and (max-width: 600px) {
+  .navigationMenu {
+    gap: 15px;
+  }
+  .link {
+    font-size: 13px;
+  }
+  .logo {
+    font-size: 20px;
+  }
+}

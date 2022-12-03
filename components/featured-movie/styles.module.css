@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 24px;
-  margin-top: 56px;
+  margin-top: 202px;
   margin-bottom: 56px;
 }
 
@@ -44,6 +44,11 @@
   width: 62px;
   height: 62px;
   color: #eee;
+  transition: all .3s linear;
+}
+.addButton:hover {
+
+  background-color: rgb(154, 149, 149);
 }
 
 .playButton {
@@ -52,10 +57,14 @@
   justify-content: center;
   background-color: #eee;
   color: #222;
-  width: 300px;
+  width: 250px;
   border-radius: 9999px;
   font-size: 20px;
   font-weight: 700;
+  transition: background-color .3s linear;
+}
+.playButton:hover {
+  background-color: rgb(196, 194, 194);
 }
 
 .moviePosterOverlay {
@@ -79,4 +88,32 @@
   z-index: -2;
   max-height: 100vh;
   object-fit: cover;
+}
+
+@media screen and (max-width: 400px) {
+  .playButton{
+    width: 80%;
+  }
+  .movieTitle {
+    font-size: 30px;
+  }
+  .overview {
+    font-size: 18px !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .movieTitle{
+    font-size: 35px;
+  }
+  .shortOverview{
+    font-size: 18px;
+  }
+  .addButton{
+    width: 42px;
+    height: 42px;
+  }
+  .overview{
+    font-size: 20px;
+  }
 }

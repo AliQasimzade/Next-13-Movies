@@ -2,6 +2,7 @@
   display: flex;
   height: 72px;
   gap: 24px;
+  overflow-x: auto;
 }
 
 .category {
@@ -15,8 +16,15 @@
   height: 100%;
   border-radius: 6px;
   font-weight: 700;
+  padding:5px 10px;
   transition: all 0.4s ease-in-out;
 }
 .category:hover{
   background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .category div{
+    font-size: 15px;
+  }
 }
