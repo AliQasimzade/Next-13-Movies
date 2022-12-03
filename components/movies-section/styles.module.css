@@ -43,7 +43,7 @@
   margin: 5px 0;
 }
 .movie:hover .movieInfo {
-  top: 45%;
+    top: 45%;
 }
 
 .movie:hover a{
